@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borad</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #000;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+
+        button{
+            border: 0;
+            border-radius: 6px;
+            height: 45px;
+            padding: 0 12px;
+            width: 60px;
+            cursor: pointer;
+        }
+        button#sim {
+            background: #14C1A8;
+            color: #fff;
+            transition: background 0.3s;
+            &:hover {
+                background: #108876;
+            }
+} 
+button#nao{
+    position: absolute;
+    background: red;
+    color: #fff;
+}
+.bt{
+    margin-left: 136px;
+    margin-top: 46px;
+}
+
+
+        .bc-1,.bc-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100%;
+            p{
+                color: #Fff;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bc-1">
+        <p>Gostaria de saber? hahahah! &#128517;</p>
+        <br/>
+        <button id="sim">Sim</button>
+        <button class="bt"   id="nao"onmouseover="deslizar()">Não</button>
+    </div>
+    <div class="bc-2">
+        <p>Eu sabia você não iria resistir! hahaha &#128513;&#128513;&#128513;</p>
+        <span>Mandarei mais informações no whatsApp ou intagram</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
